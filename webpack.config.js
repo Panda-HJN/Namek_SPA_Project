@@ -1,7 +1,7 @@
 // 开发环境配置
 const path = require('path');
 module.exports = {
-    devtool: 'source-map',//开发环境仅供调试使用，生产环境应当去掉 隐藏代码
+    // devtool: 'source-map',//开发环境仅供调试使用，生产环境应当去掉 隐藏代码
     /*入口*/
     entry: path.join(__dirname, 'src/entry.jsx'),
 
