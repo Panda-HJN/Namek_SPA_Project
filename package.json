@@ -6,10 +6,11 @@
   "author": "Panda-HJN",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack.dev.config.js --watch --color --hot --progress",
+    "startfalse": "webpack-dev-server --config webpack.dev.config.js --hot --watch --color --progress --port 80",
+    "start": "webpack --config webpack.dev.config.js --watch --color --progress http-server -p 80",
     "build": "webpack --config webpack.dev.config.js --progress",
     "watch": "webpack --config webpack.dev.config.js --watch --color --hot --progress",
-    "publish": "webpack --config webpack.config.js --watch --color --hot --progress"
+    "publish": "webpack --config webpack.config.js --watch --color  --progress"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -17,6 +18,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.9",
+    "http-server": "^0.11.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
@@ -24,7 +26,10 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "antd": "^3.1.4",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "uglifyjs-webpack-plugin": "^1.1.6"
   }
 }
